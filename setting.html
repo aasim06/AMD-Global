@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>AmdGlobal</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/style.css">
+	
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle">AmdGlobal</span>
+        </a>
+
+		<ul class="sidebar-nav">
+			<li class="sidebar-header">
+				Main
+			</li>
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="index.html">
+					<i class="bi bi-house-door"></i> <span class="sidebar-text align-middle">Dashboards</span>
+				</a>
+			</li>
+			
+			
+			<li class="sidebar-item active">
+				<a data-bs-target="#settings" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+					<i class="bi bi-gear"></i><span class="sidebar-text align-middle">Settings</span>
+				</a>
+				<ul id="settings" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+					<li class="sidebar-item active"><a class="sidebar-link" href="./setting.html"><i class="bi bi-arrow-right"></i>Setting</a></li>
+					<li class="sidebar-item active"><a class="sidebar-link" href="./email-setting.html"><i class="bi bi-arrow-right"></i>Email Setting</a></li>
+					<li class="sidebar-item active"><a class="sidebar-link" href="./duffel-settings.html"><i class="bi bi-arrow-right"></i>Duffel Setting</a></li>
+					<li class="sidebar-item active"><a class="sidebar-link" href="./stripe-settings.html"><i class="bi bi-arrow-right"></i>Stipe Setting</a></li>
+				</ul>
+
+			</li>
+			
+			
+			
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="./module.html">
+					<i class="bi bi-grid align-middle"></i><span class="sidebar-text align-middle">Modules</span>
+				</a>
+			</li>
+		
+			<li class="sidebar-item ">
+				<a class="sidebar-link" href="./users.html">
+					<i class="bi bi-person align-middle"></i> <span class="sidebar-text align-middle">User</span>
+				</a>
+			</li>
+		
+			<li class="sidebar-item ">
+				<a data-bs-target="#blogs" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+					<i class="bi bi-journal-text align-middle"></i> <span class="sidebar-text align-middle">Blog</span>
+				</a>
+				<ul id="blogs" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+					<li class="sidebar-item active"><a class="sidebar-link" href="./add-blog.html"><i class="bi bi-arrow-right"></i>Add Blog</a></li>
+					<li class="sidebar-item active"><a class="sidebar-link" href="./blogs.html"><i class="bi bi-arrow-right"></i>Blog</a></li>
+				</ul>
+			</li>
+		
+			<li class="sidebar-item ">
+				<a data-bs-target="#payment-gateway" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+					<i class="bi bi-journal-bookmark align-middle"></i> <span class="sidebar-text align-middle">Booking</span>
+				</a>
+				<ul id="payment-gateway" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+					<li class="sidebar-item active"><a class="sidebar-link" href="./payment-gateway.html"><i class="bi bi-arrow-right"></i>Payment Gateway</a></li>
+					<li class="sidebar-item active"><a class="sidebar-link" href="./currencies.html"><i class="bi bi-arrow-right"></i>Currencies</a></li>
+				</ul>
+			</li>
+		
+			<li class="sidebar-item">
+				<a class="sidebar-link" href="./newsletters.html">
+					<i class="bi bi-envelope-paper align-middle"></i> <span class="sidebar-text align-middle">Newsletter</span>
+				</a>
+			</li>
+		</ul>
+
+				
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<div class="input-group input-group-navbar custom-search" style="width: 50%;">
+					<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+					<button class="btn" type="button">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search align-middle"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+					</button>
+				</div>
+
+				
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align d-flex align-items-center">
+						<li class="nav-item">
+							<button class="btn btn-link nav-link" id="darkModeToggle">
+								<i class="align-middle" data-feather="moon"></i>
+							</button>
+						</li>
+                        <li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="gridDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="bi grid-icon bi-grid-3x3-gap-fill" style="font-size: 1.2rem; color: #6c757d;"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="gridDropdown">
+								<div class="dropdown-menu-header">
+									Quick Menu
+								</div>
+								<div class="p-3">
+									Your custom content here
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell align-middle"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 New Notifications
+								</div>
+								
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all notifications</a>
+								</div>
+							</div>
+						</li>
+						
+						<li class="nav-item dropdown">
+							<a class="nav-icon pe-md-0 dropdown-toggle show d-flex align-items-center" href="#" data-bs-toggle="dropdown" aria-expanded="true">
+								<img src="img/avatars/avatar.jpg" class="avatar img-fluid" style="border-radius: 50%;" alt="Charles Hall">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1 feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="/pages-profile"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle me-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Profile</a>
+								<a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart align-middle me-1"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="/pages-settings"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle me-1"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Settings &amp;
+									Privacy</a>
+								<a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle align-middle me-1"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+                   <h1> <strong>Settings</strong></h1>
+					<h1 class="h4 mb-3 text-muted"><strong>Dashboard / </strong>Settings</h1>
+                    
+                     <div class="row align-items-stretch">
+						<div class="col-12 col-lg-8 mb-4 d-flex">
+							<div class="card flex-fill h-100">
+								<div class="card-header">
+									<h4 class="card-title mb-0">Main Settings</h4>
+									<div class="text-muted" style="font-size: 14px;">Application name and tags</div>
+								</div>
+                                <hr>
+								<div class="card-body">
+									<form id="seoForm">
+										<div class="mb-3">
+											<div class="row">
+												<div class="col-md-3" style="margin-top: 5px;"><label class="form-label">Business Name</label></div>
+												<div class="col-md-9"><input class="form-control" type="text" value="Business Name 1" required></div>
+											</div>
+										</div>
+										<div class="mb-3">
+											<div class="row">
+												<div class="col-md-3" style="margin-top: 5px;"><label class="form-label">Domain Name</label></div>
+												<div class="col-md-9"><input class="form-control" type="text" value="Domain Name 1"></div>
+											</div>
+										</div>
+										<div class="mb-3">
+											<div class="row">
+												<div class="col-md-3" style="margin-top: 5px;"><label class="form-label">License Key</label></div>
+												<div class="col-md-9"><input class="form-control" type="text" value="License Key 1"></div>
+											</div>
+										</div>
+										<div class="mb-3">
+											<div class="row">
+												<div class="col-md-3" style="margin-top: 5px;"><label class="form-label">Website Offline</label></div>
+												<div class="col-md-9">
+													<select class="form-select">
+														<option selected>No</option>
+														<option>Yes</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3">
+											<div class="row">
+												<div class="col-md-3" style="margin-top: 5px;"><label class="form-label">Offline Message</label></div>
+												<div class="col-md-9"><textarea class="form-control" rows="3">Offline Message 1</textarea></div>
+											</div>
+										</div>
+										<button type="submit" style="float: inline-end;" class="btn btn-primary">Update Setting</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 mb-4 d-flex">
+							<div class="card flex-fill h-100">
+								<div class="card-header">
+									<h4 class="card-title mb-0">Branding</h4>
+									<div class="text-muted" style="font-size: 14px;">Business logo and favicon.</div>
+								</div>
+                                <hr>
+								<div class="card-body">
+									<div class="mb-4">
+										<label class="form-label">Business Logo</label>
+										<div class="text-muted mb-2" style="font-size: 13px;">Only PNG file supported max size 1 MB</div>
+										<img id="logoPreview" src="" alt="Business Logo" style="max-width: 100px; max-height: 100px; display: none; margin-bottom: 10px; object-fit: contain;">
+										
+                                        <input type="file" class="form-control mb-3" accept="image/png" onchange="previewImage(event, 'logoPreview', 100, 100)">
+									</div>
+									<hr>
+									<div class="mb-4">
+										<label class="form-label">Favicon</label>
+										<div class="text-muted mb-2" style="font-size: 13px;">Only PNG file supported max size 1 MB</div>
+										<img id="faviconPreview" src="" alt="Favicon" style="max-width: 40px; max-height: 40px; display: none; margin-bottom: 10px; object-fit: contain;">
+                                        <input type="file" class="form-control mb-3" accept="image/png" onchange="previewImage(event, 'faviconPreview', 40, 40)">
+										
+									</div>
+									<button type="submit" class="btn btn-primary">Update Setting</button>
+								</div>
+							</div>
+						</div>
+					</div>
+                     <div class="row align-items-stretch ">
+						<div class="col-12 col-lg-8 mb-4 d-flex">
+							<div class="card flex-fill h-100">
+								<div class="card-header">
+									<h4 class="card-title mb-0">SEO</h4>
+									<div class="text-muted" style="font-size: 14px;">SEO and meta tags</div>
+								</div>
+                                <hr>
+								<div class="card-body">
+									<form id="brandingForm">
+										<div class="mb-3 row align-items-center">
+											<label class="col-md-3 col-form-label">Meta Title</label>
+											<div class="col-md-9">
+												<input class="form-control" type="text" value="Meta Title">
+											</div>
+										</div>
+										<div class="mb-3 row align-items-start">
+											<label class="col-md-3 col-form-label">Meta Description</label>
+											<div class="col-md-9">
+												<textarea class="form-control" rows="4">Meta Description</textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-9 offset-md-3">
+												<button type="submit" class="btn btn-primary">Update Setting</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 mb-4 d-flex">
+							<div class="card flex-fill h-100">
+								<div class="card-header">
+									<h4 class="card-title mb-0">Homepage Cover</h4>
+									
+								</div>
+                                <hr>
+								<div class="card-body d-flex flex-column align-items-center">
+									<img id="homepageCoverPreview" src="https://via.placeholder.com/300x120?text=Cover+Placeholder" alt="Homepage Cover" style="max-width: 80%; max-height: 120px; margin-bottom: 20px; object-fit: contain; display: block;">
+									<input type="file" class="form-control mb-3" accept="image/png" onchange="previewImage(event, 'homepageCoverPreview', 300, 120)">
+									<button type="submit" class="btn btn-primary align-self-end">Update Setting</button>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="row align-items-stretch ">
+						<div class="col-12 col-lg-8 mb-4 d-flex flex-column gap-4">
+							<div class="card flex-fill">
+								<div class="card-header">
+									<h4 class="card-title mb-0">System Settings</h4>
+									<div class="text-muted" style="font-size: 14px;">System settings and configurations</div>
+								</div>
+								<hr>
+								<div class="card-body">
+									<form id="contactForm">
+										<div class="mb-3 row align-items-start">
+											<label class="col-md-3 col-form-label">Tracking & Analytics</label>
+											<div class="col-md-9">
+												<textarea class="form-control" rows="4" placeholder="Tracking & Analytics"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-9 offset-md-3 d-flex justify-content-end">
+												<button type="submit" class="btn btn-primary">Update Setting</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="card flex-fill ">
+								<div class="card-header">
+									<h4 class="card-title mb-0">Contact</h4>
+									<div class="text-muted" style="font-size: 14px;">Contact Details</div>
+								</div>
+								<hr>
+								<div class="card-body">
+									<form>
+										<div class="mb-3">
+											<label class="form-label">Address</label>
+											<input class="form-control" type="text" placeholder="pk. lahore">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Address on Map</label>
+											<input class="form-control" type="text" placeholder="Lorem ipsum dolor sit amet, consectetur">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Contact Email</label>
+											<input class="form-control" type="email" placeholder="hm.younas22@gmail.com">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Contact Phone</label>
+											<input class="form-control" type="text" placeholder="3047222723">
+										</div>
+										<div class="d-flex justify-content-end">
+											<button type="submit" class="btn btn-primary">Update Setting</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 mb-4">
+							<div class="card ">
+								<div class="card-header">
+									<h4 class="card-title mb-0">Social Links</h4>
+									<div class="text-muted" style="font-size: 14px;">Social media pages links</div>
+								</div>
+								<hr>
+								<div class="card-body">
+									<form>
+										<div class="mb-3">
+											<label class="form-label">Facebook</label>
+											<input class="form-control" type="text" placeholder="Facebook">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Twitter</label>
+											<input class="form-control" type="text" placeholder="Twitter">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Linkedin</label>
+											<input class="form-control" type="text" placeholder="Linkedin">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Instagram</label>
+											<input class="form-control" type="text" placeholder="Instagram">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Google</label>
+											<input class="form-control" type="text" placeholder="Google">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Youtube</label>
+											<input class="form-control" type="text" placeholder="Youtube">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Whatsapp</label>
+											<input class="form-control" type="text" placeholder="43434343">
+										</div>
+										<div class="d-flex justify-content-end">
+											<button type="submit" class="btn btn-primary">Update Setting</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	
+
+	<script>
+		// Dark mode toggle functionality
+		document.addEventListener("DOMContentLoaded", function() {
+			const darkModeToggle = document.getElementById('darkModeToggle');
+			const body = document.body;
+			
+			// Check for saved dark mode preference
+			const darkMode = localStorage.getItem('darkMode');
+			if (darkMode === 'enabled') {
+				body.classList.add('dark-mode');
+				darkModeToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+			} else {
+				darkModeToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+			}
+			
+			darkModeToggle.addEventListener('click', function() {
+				if (body.classList.contains('dark-mode')) {
+					body.classList.remove('dark-mode');
+					localStorage.setItem('darkMode', 'disabled');
+					darkModeToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+				} else {
+					body.classList.add('dark-mode');
+					localStorage.setItem('darkMode', 'enabled');
+					darkModeToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+				}
+			});
+		});
+	</script>
+
+	<script>
+	function previewImage(event, imgId, w, h) {
+		const input = event.target;
+		const img = document.getElementById(imgId);
+		if (input.files && input.files[0]) {
+			const reader = new FileReader();
+			reader.onload = function(e) {
+				img.src = e.target.result;
+				img.style.width = w + 'px';
+				img.style.height = h + 'px';
+				img.style.display = 'block';
+			};
+			reader.readAsDataURL(input.files[0]);
+		}
+	}
+	</script>
+
+<script>
+	function validateEmail(email) {
+		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+	}
+	
+	function validateURL(url) {
+		return /^(https?:\/\/)?([\w\-])+\.{1}([a-zA-Z]{2,63})([\/\w\-.]*)*\/?$/.test(url);
+	}
+	
+	function validateFile(input, maxSizeMB = 1) {
+		const file = input.files[0];
+		if (!file) return true;
+		if (file.type !== "image/png") {
+			alert("Only PNG files are allowed.");
+			return false;
+		}
+		if (file.size > maxSizeMB * 1024 * 1024) {
+			alert("File size must be under " + maxSizeMB + " MB.");
+			return false;
+		}
+		return true;
+	}
+	
+	// MAIN SETTINGS
+	// SEO FORM VALIDATION
+const seoForm = document.getElementById("seoForm");
+if (seoForm) {
+	seoForm.addEventListener("submit", function (e) {
+		const businessName = this.querySelector('input[type="text"]').value.trim();
+		const domainName = this.querySelector('input[type="text"]:nth-of-type(2)').value.trim();
+		const licenseKey = this.querySelector('input[type="text"]:nth-of-type(3)').value.trim();
+
+		let isValid = true;
+		let errorMessage = '';
+
+		// Validate Business Name
+		if (!businessName) {
+			errorMessage += 'Please enter a business name\n';
+			isValid = false;
+		}
+
+		// Validate Domain Name
+		if (!domainName) {
+			errorMessage += 'Please enter a domain name\n';
+			isValid = false;
+		} else if (!validateURL(domainName)) {
+			errorMessage += 'Please enter a valid domain name (e.g., example.com)\n';
+			isValid = false;
+		}
+
+		// Validate License Key
+		if (!licenseKey) {
+			errorMessage += 'Please enter a license key\n';
+			isValid = false;
+		}
+
+		if (!isValid) {
+			e.preventDefault();
+			alert(errorMessage);
+			return false;
+		}
+	});
+}
+
+// CONTACT FORM VALIDATION
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+	contactForm.addEventListener("submit", function (e) {
+		const email = this.querySelector('input[type="email"]').value.trim();
+		const phone = this.querySelector('input[type="tel"]').value.trim();
+
+		let isValid = true;
+		let errorMessage = '';
+
+		// Validate Email
+		if (!email) {
+			errorMessage += 'Please enter an email\n';
+			isValid = false;
+		} else if (!validateEmail(email)) {
+			errorMessage += 'Please enter a valid email address\n';
+			isValid = false;
+		}
+
+		// Validate Phone
+		if (!phone) {
+			errorMessage += 'Please enter a phone number\n';
+			isValid = false;
+		}
+
+		if (!isValid) {
+			e.preventDefault();
+			alert(errorMessage);
+			return false;
+		}
+	});
+}
+
+// SOCIAL LINKS FORM VALIDATION
+const socialLinksForm = document.getElementById("socialLinksForm");
+if (socialLinksForm) {
+	socialLinksForm.addEventListener("submit", function (e) {
+		const facebook = this.querySelector('input[name="facebook"]').value.trim();
+		const twitter = this.querySelector('input[name="twitter"]').value.trim();
+		const instagram = this.querySelector('input[name="instagram"]').value.trim();
+
+		let isValid = true;
+		let errorMessage = '';
+
+		// Validate Facebook URL
+		if (facebook && !validateURL(facebook)) {
+			errorMessage += 'Please enter a valid Facebook URL\n';
+			isValid = false;
+		}
+
+		// Validate Twitter URL
+		if (twitter && !validateURL(twitter)) {
+			errorMessage += 'Please enter a valid Twitter URL\n';
+			isValid = false;
+		}
+
+		// Validate Instagram URL
+		if (instagram && !validateURL(instagram)) {
+			errorMessage += 'Please enter a valid Instagram URL\n';
+			isValid = false;
+		}
+
+		if (!isValid) {
+			e.preventDefault();
+			alert(errorMessage);
+			return false;
+		}
+	});
+}
+	
+	// BRANDING
+	document.getElementById("brandingForm").addEventListener("submit", function (e) {
+		const logoInput = this.querySelector('input[type="file"]:nth-of-type(1)');
+		const faviconInput = this.querySelector('input[type="file"]:nth-of-type(2)');
+		if (!validateFile(logoInput) || !validateFile(faviconInput)) {
+			e.preventDefault();
+		}
+	});
+	
+	// CONTACT
+	document.getElementById("contactForm").addEventListener("submit", function (e) {
+		const email = this.querySelector('input[type="email"]').value.trim();
+		if (!validateEmail(email)) {
+			alert("Enter a valid email address.");
+			e.preventDefault();
+		}
+	});
+	
+	// SOCIAL
+	document.getElementById("socialLinksForm").addEventListener("submit", function (e) {
+		const inputs = this.querySelectorAll('input[type="text"]');
+		for (let input of inputs) {
+			if (input.value && !validateURL(input.value)) {
+				alert(`Enter a valid URL in "${input.placeholder}"`);
+				e.preventDefault();
+				break;
+			}
+		}
+	});
+	</script>
+	
+</body>
+
+</html>
