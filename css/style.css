@@ -278,7 +278,16 @@ body.dark-mode .switch input:checked + .slider {
 body.dark-mode .switch input:checked + .slider:before {
     background-color: #e62143;
 }
-
+body.dark-mode .nav-item .indicator {
+    background: linear-gradient(to bottom, #e62143, #e62143);
+    box-shadow: 0px 4px 32px 0 rgba(241, 17, 9, 0.8);
+    border: 1px solid #e62143;
+    color: white;
+    font-weight: 500;
+    
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
 /* Sidebar dropdown arrow styles */
 .sidebar [data-bs-toggle=collapse]:after {
     border: solid;
